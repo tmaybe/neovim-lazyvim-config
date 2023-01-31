@@ -13,3 +13,7 @@ vim.keymap.set(
   "yiw:!oi<Space>-c<Space><C-r>0<CR>",
   { silent = true, desc = "Open commit hash under cursor in GitHub" }
 )
+
+-- toggle absolute & relative line numbers
+vim.keymap.set("n", "yon", "<cmd>se nu!<cr>", { silent = true, desc = "Toggle absolute line numbers" })
+vim.keymap.set("n", "yor", "<cmd>se rnu!<cr>", { silent = true, desc = "Toggle relative line numbers" })
