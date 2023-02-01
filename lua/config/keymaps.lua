@@ -7,6 +7,7 @@ vim.keymap.del("n", "<leader>gg")
 vim.keymap.del("n", "<leader>gG")
 
 -- run oi with the word under the cursor, specifying a commit
+-- https://github.com/tomas-nava/laptop-setup/blob/base/bin/oi
 vim.keymap.set(
   "n",
   "<Leader>yoi",
@@ -17,3 +18,17 @@ vim.keymap.set(
 -- toggle absolute & relative line numbers
 vim.keymap.set("n", "yon", "<cmd>se nu!<cr>", { silent = true, desc = "Toggle absolute line numbers" })
 vim.keymap.set("n", "yor", "<cmd>se rnu!<cr>", { silent = true, desc = "Toggle relative line numbers" })
+
+-- [<space> and ]<space> to insert blank lines above & below current line
+vim.keymap.set(
+  "n",
+  "[<Space>",
+  "<cmd>call append(line('.')-1, '')<cr>",
+  { silent = true, desc = "Insert blank line above" }
+)
+vim.keymap.set(
+  "n",
+  "]<Space>",
+  "<cmd>call append(line('.'), '')<cr>",
+  { silent = true, desc = "Insert blank line below" }
+)
