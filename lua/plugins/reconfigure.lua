@@ -18,4 +18,18 @@ return {
       })
     end,
   },
+  -- ensure mason installs these
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "eslint-lsp",
+        "eslint_d",
+        "rubocop",
+        "solargraph",
+        "typescript-language-server",
+        "yaml-language-server",
+      },
+    },
+  },
 }
