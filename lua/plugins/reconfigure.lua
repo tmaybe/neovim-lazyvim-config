@@ -1,10 +1,21 @@
--- change unwanted lazyvim default configurations
+-- change unwanted lazyvim defaults
 return {
+  -- change default colorscheme
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "tokyonight-night",
+    },
+  },
+  -- disable neo-tree
+  { "nvim-neo-tree/neo-tree.nvim", enabled = false },
   -- remove neo-tree extension to lualine
   {
     "nvim-lualine/lualine.nvim",
     opts = { extensions = {} },
   },
+  -- disable flit
+  { "ggandor/flit.nvim", enabled = false },
   -- reconfigure leap
   {
     "ggandor/leap.nvim",
