@@ -7,6 +7,15 @@ return {
       colorscheme = "tokyonight-night",
     },
   },
+  -- no animation for indent lines
+  {
+    "echasnovski/mini.indentscope",
+    opts = {
+      draw = {
+        animation = require("mini.indentscope").gen_animation.none(),
+      },
+    },
+  },
   -- disable neo-tree
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
   -- remove neo-tree extension to lualine
