@@ -38,7 +38,6 @@ return {
         "eslint_d",
         "rubocop",
         "solargraph",
-        "typescript-language-server",
         "yaml-language-server",
       },
     },
