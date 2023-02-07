@@ -1,5 +1,9 @@
 -- add new plugins
 return {
+  -- base 16 color schemes
+  {
+    "RRethy/nvim-base16",
+  },
   -- git & github interaction
   {
     "tpope/vim-fugitive",
