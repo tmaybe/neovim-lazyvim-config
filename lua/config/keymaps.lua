@@ -2,6 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+-- save on enter
+vim.keymap.set("n", "<cr>", "<cmd>w<cr><esc>", { desc = "Save file" })
 
 -- run oi with the word under the cursor, specifying a commit
 -- https://github.com/tomas-nava/laptop-setup/blob/base/bin/oi
