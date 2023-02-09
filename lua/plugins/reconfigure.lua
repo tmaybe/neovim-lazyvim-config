@@ -25,10 +25,13 @@ return {
   },
   -- disable neo-tree
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
-  -- remove neo-tree extension to lualine
+  -- reconfigure lualine
   {
     "nvim-lualine/lualine.nvim",
-    opts = { extensions = {} },
+    opts = function(_, opts)
+      -- no clock
+      table.remove(opts.sections.lualine_z)
+    end,
   },
   -- disable flit
   { "ggandor/flit.nvim", enabled = false },
