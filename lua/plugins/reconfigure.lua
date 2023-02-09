@@ -7,6 +7,13 @@ return {
       colorscheme = "base16-gigavolt",
     },
   },
+  -- don't autoformat on save
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      autoformat = false,
+    }
+  },
   -- no animation for indent lines
   {
     "echasnovski/mini.indentscope",
