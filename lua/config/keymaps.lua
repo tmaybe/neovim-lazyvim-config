@@ -31,3 +31,11 @@ vim.keymap.set(
   "<cmd>call append(line('.'), '')<cr>",
   { silent = true, desc = "Insert blank line below" }
 )
+
+-- copy the path of the current file
+vim.keymap.set(
+  "n",
+  "<Leader>cg",
+  "<cmd>let @+ = expand('%')<cr>",
+  { desc = "Copy file path" }
+)
