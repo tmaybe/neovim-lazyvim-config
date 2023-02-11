@@ -72,13 +72,20 @@ return {
       },
     },
   },
-  -- add ruby to treesitter
+  -- add ruby & endwise to treesitter
   {
     "nvim-treesitter/nvim-treesitter",
+    dependencies = {
+      "RRethy/nvim-treesitter-endwise",
+    },
     opts = function(_, opts)
       if type(opts.ensure_installed) == "table" then
         vim.list_extend(opts.ensure_installed, { "ruby" })
       end
+      return vim.tbl_deep_extend("force", opts, {
+        endwise = { enable = true },
+        indent = { enable = false },
+      })
     end,
   },
   -- Use <tab> for completion and snippets (supertab)
