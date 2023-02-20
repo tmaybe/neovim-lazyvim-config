@@ -1,9 +1,5 @@
 -- add new plugins
 return {
-  -- base 16 color schemes
-  {
-    "RRethy/nvim-base16",
-  },
   -- git & github interaction
   {
     "tpope/vim-fugitive",
@@ -109,5 +105,20 @@ return {
         },
       }
     end,
+  },
+  -- base 16 colorschemes
+  -- use "base16-gigavolt" to select
+  {
+    "RRethy/nvim-base16",
+  },
+  -- nightfox colorscheme
+  -- use "carbonfox" to select
+  {
+    "EdenEast/nightfox.nvim",
+  },
+  -- kanagawa colorscheme
+  -- use "kanagawa" to select
+  {
+    "rebelot/kanagawa.nvim",
   },
 }
