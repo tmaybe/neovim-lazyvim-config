@@ -4,7 +4,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "base16-gigavolt",
+      colorscheme = "kanagawa",
     },
   },
   -- don't autoformat on save
