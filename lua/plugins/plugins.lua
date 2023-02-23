@@ -120,5 +120,13 @@ return {
   -- use "kanagawa" to select
   {
     "rebelot/kanagawa.nvim",
+    -- color the window separator hot pink
+    config = function()
+      require("kanagawa").setup({
+        overrides = function()
+          return { WinSeparator = { fg = "#FF69B4" } }
+        end
+      })
+    end,
   },
 }
