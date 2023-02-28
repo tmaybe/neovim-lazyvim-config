@@ -105,6 +105,9 @@ return {
         },
       }
     end,
+    keys = {
+      { "<leader>a", "<cmd>A<cr>", desc = "Go to alternate file" },
+    },
   },
   -- base 16 colorschemes
   -- use "base16-gigavolt" to select
