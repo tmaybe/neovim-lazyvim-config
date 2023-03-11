@@ -109,6 +109,22 @@ return {
       { "<leader>a", "<cmd>A<cr>", desc = "Go to alternate file" },
     },
   },
+  -- better code folding
+  {
+    "kevinhwang91/nvim-ufo",
+    dependencies = "kevinhwang91/promise-async",
+    event = "BufReadPost",
+    opts = {},
+
+    init = function()
+      vim.keymap.set("n", "zR", function()
+        require("ufo").openAllFolds()
+      end)
+      vim.keymap.set("n", "zM", function()
+        require("ufo").closeAllFolds()
+      end)
+    end,
+  },
   -- base 16 colorschemes
   -- use "base16-gigavolt" to select
   {

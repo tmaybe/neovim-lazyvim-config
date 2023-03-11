@@ -21,7 +21,7 @@ the [documentation](https://lazyvim.github.io/installation) to make your own.
 1. Add/enable LSP support and other conveniences for Ruby and Typescript.
 1. Add and configure alternate file navigation with
    [vim-projectionist](https://github.com/tpope/vim-projectionist) (`<Leader>a`)
-1. Use [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) to find folds
+1. Use [nvim-ufo](https://github.com/kevinhwang91/nvim-ufo) for code folding
 1. Save files on `<Enter>` and don't autoformat on save
 1. Add shortcuts to insert blank lines (`[<Space>`, `]<Space>`) 
 1. Add shortcut to copy current file's path to clipboard (`<Leader>cg`)
