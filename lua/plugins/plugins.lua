@@ -9,6 +9,34 @@ return {
       { "<leader>gr", "<cmd>GBrowse<cr>", desc = "Open the current file in GitHub" },
     },
   },
+  -- file navigation
+  {
+    "stevearc/oil.nvim",
+    config = function()
+      require("oil").setup({
+        keymaps = {
+          ["-"] = "actions.parent",
+          ["H"] = "actions.parent",
+          ["<CR>"] = "actions.select",
+          ["L"] = "actions.select",
+          ["g."] = "actions.toggle_hidden",
+          ["g?"] = "actions.show_help",
+          ["q"] = "actions.close",
+        },
+        use_default_keymaps = false,
+      })
+    end,
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    keys = {
+      {
+        "-",
+        function()
+          require("oil").open_float()
+        end,
+        desc = "Open file explorer in current directory",
+      },
+    },
+  },
   -- prompt for ripgrep
   {
     "mhinz/vim-grepper",
