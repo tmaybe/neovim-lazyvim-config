@@ -7,7 +7,7 @@ the [documentation](https://lazyvim.github.io/installation) to make your own.
 ## What's changed from the default settings?
 
 1. Remove [Neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) and
-   use [nnn.nvim](https://github.com/mcchrish/nnn.vim) instead
+   use [mini.files](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-files.md) instead
 1. Install and configure the git plugins [vim-fugitive](https://github.com/tpope/vim-fugitive)
    and [vim-rhubarb](https://github.com/tpope/vim-rhubarb), for showing
    git blame (`<Leader>gb`) and opening the current file in GitHub (`<Leader>gr`)

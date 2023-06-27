@@ -14,6 +14,24 @@ return {
       autoformat = false,
     }
   },
+  -- use '-' to activate mini.files
+  {
+    "echasnovski/mini.files",
+    keys = {
+      {
+        "-",
+        function()
+          require("mini.files").open(vim.api.nvim_buf_get_name(0), true)
+        end,
+        desc = "Open mini.files (directory of current file)",
+      },
+    },
+    opts = {
+      windows = {
+        preview = false,
+      },
+    },
+  },
   -- no animation for indent lines
   {
     "echasnovski/mini.indentscope",
