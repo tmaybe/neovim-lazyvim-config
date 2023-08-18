@@ -6,8 +6,47 @@ return {
     dependencies = { "tpope/vim-rhubarb" },
     keys = {
       { "<leader>gb", "<cmd>Git blame<cr>", desc = "Open git blame" },
-      { "<leader>gr", "<cmd>GBrowse<cr>", desc = "Open the current file in GitHub" },
     },
+  },
+  {
+    "ruifm/gitlinker.nvim",
+    event = "VeryLazy",
+    keys = {
+      {
+        "<leader>gr",
+        function()
+          local gl = package.loaded.gitlinker
+          gl.get_buf_range_url(
+            "n",
+            {
+              action_callback = require("gitlinker.actions").open_in_browser,
+              add_current_line_on_normal_mode = false,
+              print_url = false,
+            },
+            { silent = true }
+          )
+        end,
+        mode = "n",
+        desc = "Open current file in GitHub",
+      },
+      {
+        "<leader>gr",
+        function()
+          local gl = package.loaded.gitlinker
+          gl.get_buf_range_url(
+            "v",
+            {
+              action_callback = require("gitlinker.actions").open_in_browser,
+              print_url = false,
+            },
+            { silent = true }
+          )
+        end,
+        mode = "v",
+        desc = "Open current file with the selected lines highlighted in GitHub",
+      },
+    },
+    opts = { mappings = nil },
   },
   -- file navigation
   {

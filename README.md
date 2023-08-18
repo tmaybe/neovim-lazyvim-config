@@ -8,9 +8,10 @@ the [documentation](https://lazyvim.github.io/installation) to make your own.
 
 1. Remove [Neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) and
    use [oil.nvim](https://github.com/stevearc/oil.nvim) instead
-1. Install and configure the git plugins [vim-fugitive](https://github.com/tpope/vim-fugitive)
-   and [vim-rhubarb](https://github.com/tpope/vim-rhubarb), for showing
-   git blame (`<Leader>gb`) and opening the current file in GitHub (`<Leader>gr`)
+1. Install and configure the git plugins [vim-fugitive](https://github.com/tpope/vim-fugitive),
+   [vim-rhubarb](https://github.com/tpope/vim-rhubarb), and
+   [gitlinker](https://github.com/ruifm/gitlinker.nvim) for showing git blame (`<Leader>gb`) and
+   opening the current file in GitHub (`<Leader>gr`)
 1. Customize autocomplete behavior (only activate on `<Tab>`, don't autoselect first suggestion)
 1. Default to absolute line numbers and add quick shortcuts to toggle
    absolute (`yon`) & relative (`yor`)
