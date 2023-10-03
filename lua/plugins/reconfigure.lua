@@ -66,8 +66,6 @@ return {
       ensure_installed = {
         "eslint-lsp",
         "eslint_d",
-        "rubocop",
-        "solargraph",
         "yaml-language-server",
       },
     },
