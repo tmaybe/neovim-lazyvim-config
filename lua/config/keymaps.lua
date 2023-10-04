@@ -6,7 +6,7 @@
 vim.keymap.set("n", "<cr>", "<cmd>w<cr><esc>", { desc = "Save file" })
 
 -- run oi with the word under the cursor, specifying a commit
--- https://github.com/tomas-nava/laptop-setup/blob/base/bin/oi
+-- https://github.com/tmaybe/laptop-setup/blob/base/bin/oi
 vim.keymap.set(
   "n",
   "<Leader>yoi",
