@@ -7,6 +7,10 @@ return {
       colorscheme = "kanagawa",
     },
   },
+  -- disable catppuccin colorscheme
+  {
+    "catppuccin", enabled = false
+  },
   -- don't autoformat on save
   {
     "neovim/nvim-lspconfig",
