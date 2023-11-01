@@ -147,13 +147,16 @@ return {
     end,
   },
   {
-    "goolord/alpha-nvim",
-    opts = function(_, dashboard)
-      local logo = [[
-░▀▄▀░▄▀▄░█▒█  ▒▄▀▄▒█▀▄▒██▀  ░█▄█▒██▀▒█▀▄▒██▀
-░▒█▒░▀▄▀░▀▄█▒░░█▀█░█▀▄░█▄▄▒░▒█▒█░█▄▄░█▀▄░█▄▄
-      ]]
-      dashboard.section.header.val = vim.split(logo, "\n")
-    end,
+    "nvimdev/dashboard-nvim",
+    opts = {
+      config = {
+        header = {
+          [[]],
+          [[░▀▄▀░▄▀▄░█▒█  ▒▄▀▄▒█▀▄▒██▀  ░█▄█▒██▀▒█▀▄▒██▀]],
+          [[░▒█▒░▀▄▀░▀▄█▒░░█▀█░█▀▄░█▄▄▒░▒█▒█░█▄▄░█▀▄░█▄▄]],
+          [[]],
+        },
+      },
+    },
   },
 }
