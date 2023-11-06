@@ -3,6 +3,7 @@
 -- Add any additional options here
 vim.opt.list = false -- Don't show invisible characters (tabs, spaces, etc.)
 vim.opt.relativenumber = false -- relative line numbers off by default
+vim.g.autoformat = false -- don't autoformat on save
 -- set fold options (using nvim-ufo)
 vim.opt.foldcolumn = "0"
 vim.opt.foldlevel = 99
