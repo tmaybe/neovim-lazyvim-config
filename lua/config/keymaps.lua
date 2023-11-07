@@ -32,6 +32,21 @@ vim.keymap.set(
   { silent = true, desc = "Insert blank line below" }
 )
 
+-- [a and ]a to move the current line up and down
+vim.keymap.set(
+  "n",
+  "[a",
+  "<cmd>m -2<cr>",
+  { silent = true, desc = "Move current line up one" }
+)
+
+vim.keymap.set(
+  "n",
+  "]a",
+  "<cmd>m +1<cr>",
+  { silent = true, desc = "Move current line down one" }
+)
+
 -- copy the path of the current file
 vim.keymap.set(
   "n",
