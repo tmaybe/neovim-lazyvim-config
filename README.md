@@ -19,12 +19,12 @@ the [documentation](https://lazyvim.github.io/installation) to make your own.
    prompt that puts results in quickfix (`<Leader>rr` or `<Leader>rw` to quick-search the
    word under the cursor) 
 1. Add [nvim-bqf](https://github.com/kevinhwang91/nvim-bqf) to show previews of files in quickfix
-1. Add/enable LSP support and other conveniences for Ruby and Typescript.
+1. Add/enable LSP support and other conveniences for Python and Typescript.
 1. Add and configure alternate file navigation with
    [vim-projectionist](https://github.com/tpope/vim-projectionist) (`<Leader>a`)
 1. Use [nvim-ufo](https://github.com/kevinhwang91/nvim-ufo) for code folding
 1. Save files on `<Enter>` and don't autoformat on save
-1. Add shortcuts to insert blank lines (`[<Space>`, `]<Space>`) 
+1. Add shortcuts to insert blank lines (`[<Space>`, `]<Space>`) and to move the current line up (`[a`) or down (`]a`)
 1. Add shortcut to copy current file's path to clipboard (`<Leader>cg`)
 1. Various cosmetic changes (add new colorschemes and change default, hide invisible
    characters, show vertical bar, don't animate indent lines, remove the clock and use default
