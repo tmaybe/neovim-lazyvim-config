@@ -140,16 +140,52 @@ return {
     end,
   },
   {
-    "nvimdev/dashboard-nvim",
-    opts = {
-      config = {
-        header = {
-          [[]],
-          [[░▀▄▀░▄▀▄░█▒█  ▒▄▀▄▒█▀▄▒██▀  ░█▄█▒██▀▒█▀▄▒██▀]],
-          [[░▒█▒░▀▄▀░▀▄█▒░░█▀█░█▀▄░█▄▄▒░▒█▒█░█▄▄░█▀▄░█▄▄]],
-          [[]],
-        },
-      },
+    {
+      "nvimdev/dashboard-nvim",
+      opts = function(_, opts)
+        local time = os.date("*t")
+        local header = {}
+
+        if time.hour > 1 and time.hour < 12 then
+          header = {
+            [[]],
+            [[       ┓           •    ]],
+            [[┏┓┏┓┏┓┏┫  ┏┳┓┏┓┏┓┏┓┓┏┓┏┓]],
+            [[┗┫┗┛┗┛┗┻  ┛┗┗┗┛┛ ┛┗┗┛┗┗┫]],
+            [[ ┛                     ┛]],
+            [[]],
+          }
+        elseif time.hour > 11 and time.hour < 17 then
+          header = {
+            [[]],
+            [[       ┓    ┏             ]],
+            [[┏┓┏┓┏┓┏┫  ┏┓╋╋┏┓┏┓┏┓┏┓┏┓┏┓]],
+            [[┗┫┗┛┗┛┗┻  ┗┻┛┗┗ ┛ ┛┗┗┛┗┛┛┗]],
+            [[ ┛                        ]],
+            [[]],
+          }
+        elseif time.hour > 16 and time.hour < 21 then
+          header = {
+            [[]],
+            [[       ┓          •    ]],
+            [[┏┓┏┓┏┓┏┫  ┏┓┓┏┏┓┏┓┓┏┓┏┓]],
+            [[┗┫┗┛┗┛┗┻  ┗ ┗┛┗ ┛┗┗┛┗┗┫]],
+            [[ ┛                    ┛]],
+            [[]],
+          }
+        else
+          header = {
+            [[]],
+            [[       ┓    •  ┓  ]],
+            [[┏┓┏┓┏┓┏┫  ┏┓┓┏┓┣┓╋]],
+            [[┗┫┗┛┗┛┗┻  ┛┗┗┗┫┛┗┗]],
+            [[ ┛            ┛   ]],
+            [[]],
+          }
+        end
+
+        opts.config.header = header
+      end,
     },
   },
 }
