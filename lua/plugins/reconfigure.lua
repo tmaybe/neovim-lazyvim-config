@@ -30,17 +30,6 @@ return {
       table.remove(opts.sections.lualine_z)
     end,
   },
-  -- don't highlight and default icons for nvim-navic
-  {
-    "SmiteshP/nvim-navic",
-    opts = function()
-      return {
-        separator = " ",
-        highlight = false,
-        depth_limit = 5,
-      }
-    end,
-  },
   -- disable flit
   { "ggandor/flit.nvim", enabled = false },
   -- reconfigure leap
