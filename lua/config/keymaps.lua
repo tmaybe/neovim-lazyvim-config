@@ -5,6 +5,14 @@
 -- save on enter
 vim.keymap.set("n", "<cr>", "<cmd>w<cr><esc>", { desc = "Save file" })
 
+-- format the current file with jq
+vim.keymap.set(
+  "n",
+  "cj",
+  "<cmd>%!jq .<cr>",
+  { silent = true, desc = "Format the current file with jq"}
+)
+
 -- run oi with the word under the cursor, specifying a commit
 -- https://github.com/tmaybe/laptop-setup/blob/base/bin/oi
 vim.keymap.set(
