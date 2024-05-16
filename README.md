@@ -27,4 +27,4 @@ the [documentation](https://lazyvim.github.io/installation) to make your own.
 1. Add shortcuts to insert blank lines (`[<Space>`, `]<Space>`) and to move the current line up (`[a`) or down (`]a`)
 1. Add shortcut to copy current file's path to clipboard (`<Leader>cg`)
 1. Various cosmetic changes (add new colorschemes and change default, hide invisible
-   characters, show vertical bar, don't animate indent lines, remove the clock on lualine)
+   characters, show vertical bar, remove the clock on lualine)
