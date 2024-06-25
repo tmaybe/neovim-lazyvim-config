@@ -56,6 +56,7 @@ return {
         keymaps = {
           ["-"] = "actions.parent",
           ["H"] = "actions.parent",
+          ["K"] = "actions.preview",
           ["<CR>"] = "actions.select",
           ["L"] = "actions.select",
           ["g."] = "actions.toggle_hidden",
