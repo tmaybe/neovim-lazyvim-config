@@ -7,9 +7,12 @@ return {
       colorscheme = "kanagawa",
     },
   },
-  -- disable catppuccin colorscheme
+  -- disable catppuccin and tokyonight colorschemes
   {
     "catppuccin", enabled = false
+  },
+  {
+    "tokyonight.nvim", enabled = false
   },
   -- disable neo-tree
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
