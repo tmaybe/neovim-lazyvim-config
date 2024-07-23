@@ -50,6 +50,13 @@ return {
       },
     },
   },
+  -- disable inlay/inline lsp hints
+  {
+    "nvim-lspconfig",
+    opts = {
+      inlay_hints = { enabled = false }
+    },
+  },
   -- add ruby & endwise to treesitter
   {
     "nvim-treesitter/nvim-treesitter",
