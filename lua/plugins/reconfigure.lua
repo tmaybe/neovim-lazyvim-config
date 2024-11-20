@@ -9,10 +9,12 @@ return {
   },
   -- disable catppuccin and tokyonight colorschemes
   {
-    "catppuccin", enabled = false
+    "catppuccin",
+    enabled = false,
   },
   {
-    "tokyonight.nvim", enabled = false
+    "tokyonight.nvim",
+    enabled = false,
   },
   -- disable neo-tree
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
@@ -54,7 +56,7 @@ return {
   {
     "nvim-lspconfig",
     opts = {
-      inlay_hints = { enabled = false }
+      inlay_hints = { enabled = false },
     },
   },
   -- add ruby & endwise to treesitter
@@ -102,7 +104,7 @@ return {
       opts.preselect = cmp.PreselectMode.None
       opts.completion = {
         autocomplete = false,
-        completeopt = "menu,menuone,noinsert,noselect"
+        completeopt = "menu,menuone,noinsert,noselect",
       }
 
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
