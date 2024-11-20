@@ -131,7 +131,7 @@ return {
   },
   {
     {
-      "nvimdev/dashboard-nvim",
+      "folke/snacks.nvim",
       opts = function(_, opts)
         local time = os.date("*t")
         local header = {}
@@ -174,7 +174,7 @@ return {
           }
         end
 
-        opts.config.header = header
+        opts.dashboard.preset.header = table.concat(header, "\n")
       end,
     },
   },
