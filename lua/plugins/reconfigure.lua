@@ -135,6 +135,8 @@ return {
     {
       "folke/snacks.nvim",
       opts = function(_, opts)
+        --
+        -- show a custom message on the dashboard (Snacks.dashboard)
         local time = os.date("*t")
         local header = {}
 

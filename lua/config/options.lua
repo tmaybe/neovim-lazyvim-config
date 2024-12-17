@@ -12,3 +12,5 @@ vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
 -- add a vertical bar at line 100
 vim.cmd[[set colorcolumn=100]]
+-- no animations in snacks plugins
+vim.g.snacks_animate = false
