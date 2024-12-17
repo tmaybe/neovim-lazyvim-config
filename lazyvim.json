@@ -1,7 +1,7 @@
 {
   "extras": [
     "lazyvim.plugins.extras.coding.mini-surround",
-    "lazyvim.plugins.extras.editor.fzf",
+    "lazyvim.plugins.extras.coding.nvim-cmp",
     "lazyvim.plugins.extras.editor.inc-rename",
     "lazyvim.plugins.extras.editor.leap",
     "lazyvim.plugins.extras.lang.json",
@@ -9,8 +9,9 @@
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.ui.smear-cursor"
   ],
+  "install_version": 7,
   "news": {
-    "NEWS.md": "7429"
+    "NEWS.md": "10960"
   },
-  "version": 7
+  "version": 8
 }
