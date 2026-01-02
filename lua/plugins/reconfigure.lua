@@ -53,10 +53,20 @@ return {
     },
   },
   -- disable inlay/inline lsp hints
+  -- and point ruby_lsp to the rbenv shim
   {
     "nvim-lspconfig",
     opts = {
       inlay_hints = { enabled = false },
+      servers = {
+        ruby_lsp = {
+          mason = false,
+          cmd = { vim.fn.expand("~/.rbenv/shims/ruby-lsp") },
+          init_options = {
+            formatter = "rubocop_internal",
+          },
+        },
+      },
     },
   },
   -- add ruby & endwise to treesitter
