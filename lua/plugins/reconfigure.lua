@@ -30,7 +30,7 @@ return {
   { "ggandor/flit.nvim", enabled = false },
   -- reconfigure leap
   {
-    "ggandor/leap.nvim",
+    "https://codeberg.org/andyg/leap.nvim.git",
     dependencies = {},
     config = function()
       vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)')
