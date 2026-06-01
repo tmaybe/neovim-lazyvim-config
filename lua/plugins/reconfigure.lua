@@ -36,7 +36,6 @@ return {
       vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)')
       vim.keymap.set('n', 'S', '<Plug>(leap-from-window)')
       require("leap").setup({
-        highlight_unlabeled_phase_one_targets = true,
         case_sensitive = true,
       })
     end,
